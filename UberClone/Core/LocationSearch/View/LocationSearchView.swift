@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LocationSearchView: View {
-    @State private var startLocationText=""
-    @State private var destinationLocationText=""
+    @State private var startLocationText = ""
+    @State private var destinationLocationText = ""
 
     var body: some View {
         VStack {
@@ -54,6 +54,7 @@ struct LocationSearchView: View {
                 }
             }
         }
+        .background(.white)
     }
 }
 
