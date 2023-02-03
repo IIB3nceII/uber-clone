@@ -13,6 +13,7 @@ struct RideRequestView: View {
             Capsule()
                 .foregroundColor(Color(.systemGray5))
                 .frame(width: 48, height: 6)
+                .padding(.top, 8)
 
             HStack {
                 VStack {
@@ -64,8 +65,8 @@ struct RideRequestView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             ScrollView(.horizontal) {
-                LazyHStack(spacing: 12) {
-                    ForEach(0 ..< 3, id: \.self) { _ in
+                HStack(spacing: 12) {
+                    ForEach(0 ..< 6, id: \.self) { _ in
                         VStack(alignment: .leading) {
                             Image("uber-x")
                                 .resizable()
@@ -127,7 +128,9 @@ struct RideRequestView: View {
                     .foregroundColor(.white)
             }
         }
+        .padding(.bottom, 16)
         .background(.white)
+        .cornerRadius(16)
     }
 }
 
