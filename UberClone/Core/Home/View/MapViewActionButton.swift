@@ -44,10 +44,8 @@ struct MapViewActionButton: View {
         switch state {
         case .noInput:
             return "line.3.horizontal"
-        case .searchingForLocation, .locationSelected:
+        case .searchingForLocation, .locationSelected, .polyLineAdded:
             return "arrow.left"
-        default:
-            return "line.3.horizontal"
         }
     }
 }
